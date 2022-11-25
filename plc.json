@@ -1,0 +1,11 @@
+{
+	"files" : [
+		"main.st"
+	],
+	"compile_type": "Static",
+	"output": "main.bin",
+
+	"package_commands": [
+		"avr-objcopy -j .text -j .data -O ihex $BUILD_LOCATION/$ARCH/main.bin $BUILD_LOCATION/$ARCH/main.hex"
+	]
+}
